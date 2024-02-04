@@ -3,8 +3,7 @@ import { HeroLinks } from './components'
 
 export default function Home() {
   return (
-  <div>
-    <HeroLinks/>
+  <div className='max-w-48'>
   </div>
   )
 }

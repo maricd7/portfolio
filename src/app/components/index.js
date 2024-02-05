@@ -4,3 +4,4 @@ export * from "./Logo";
 export * from "./Summary";
 export * from "./ProjectsSection";
 export * from "./common";
+export * from "./Home";

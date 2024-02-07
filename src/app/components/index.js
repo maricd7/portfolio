@@ -5,3 +5,4 @@ export * from "./Summary";
 export * from "./ProjectsSection";
 export * from "./common";
 export * from "./Home";
+export * from "./BurgerMenu";

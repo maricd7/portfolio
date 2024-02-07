@@ -16,11 +16,11 @@ export const Nav = () => {
     if (theme === 'dark') {
       setTheme('light');
       setThemeIcon('carbon:sun');
-      setIconColor('#fff')
+      setIconColor('#000')
     } else {
       setTheme('dark');
       setThemeIcon('carbon:moon');
-      setIconColor('#000');
+      setIconColor('#fff');
     }
   }
   function toggleBurger(){

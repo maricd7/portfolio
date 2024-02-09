@@ -1,7 +1,7 @@
 'use client'
 import { Icon } from '@iconify/react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Logo } from '../Logo'
 import { useTheme } from "next-themes"
 import { BurgerMenu } from '../BurgerMenu'
@@ -12,21 +12,35 @@ export const Nav = () => {
   const [themeIcon, setThemeIcon] = useState('carbon:sun')
   const [iconColor, setIconColor] = useState('#000')
   const [burger,setBurger] = useState(false)
+ 
   function toggleTheme(){
-    if (theme === 'dark') {
+    if (theme === 'dark' ) {
       setTheme('light');
       setThemeIcon('carbon:sun');
       setIconColor('#000')
-    } else {
+    } 
+    else {
       setTheme('dark');
       setThemeIcon('carbon:moon');
       setIconColor('#fff');
     }
+  
   }
   function toggleBurger(){
     setBurger(!burger)
   }
 
+  function checkSystemTheme(){
+    const sysTheme = localStorage.getItem('theme')
+    if(sysTheme ==='dark'){
+      setTheme('dark');
+      setThemeIcon('carbon:moon');
+      setIconColor('#fff');
+    }
+  }
+  useEffect(()=>{
+    checkSystemTheme();
+  },[])
   return (
     <nav className='flex justify-between  md:mx-auto my-8 max-w-3xl items-center  mx-4 '>
       <Logo />

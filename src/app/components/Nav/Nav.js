@@ -36,6 +36,13 @@ export const Nav = () => {
       setTheme('dark');
       setThemeIcon('carbon:moon');
       setIconColor('#fff');
+    }else if(!sysTheme){
+      setTheme('dark');
+      setThemeIcon('carbon:moon');
+      setIconColor('#fff');
+    }else{
+      setThemeIcon('carbon:moon');
+      setIconColor('#fff');
     }
   }
   useEffect(()=>{

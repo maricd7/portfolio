@@ -32,8 +32,7 @@ export const Nav = () => {
 
   function checkSystemTheme(){
     const sysTheme = localStorage.getItem('theme')
-    if(sysTheme ==='dark'){
-      console.log('PRODUCTION LOG')
+    if(sysTheme ==='system'){
       setTheme('dark');
       setThemeIcon('carbon:moon');
       setIconColor('#fff');

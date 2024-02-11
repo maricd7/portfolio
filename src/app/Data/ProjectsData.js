@@ -7,8 +7,8 @@ export const ProjectsData = [
     },
     {
         name:'Swift Sail CMS (work in progress)', 
-        paragraphTxt:'Swift Sail CMS is a robust solution designed to efficiently manage the SwiftSail shop, offering a range of features such as product addition, editing, removal, order tracking, and more. Crafted with Next.js and Tailwind CSS, this platform is enhanced with TypeScript to ensure thorough type-checking, crucial for enabling clients to directly edit content on the production environment with confidence.',
-        technologies:['Next.js', 'TailwindCSS', 'Supabase', 'Typescript'],
+        paragraphTxt:'Swift Sail CMS is a robust solution designed to efficiently manage the SwiftSail shop, offering a range of features such as product addition, editing, removal, order tracking (Charts), and more. Crafted with Next.js and Tailwind CSS, this platform is enhanced with TypeScript to ensure thorough type-checking, crucial for enabling clients to directly edit content on the production environment with confidence.',
+        technologies:['Next.js', 'TailwindCSS', 'Supabase', 'Typescript','Chart JS',],
         image: '/cms-cover.png',
     }
 ] 

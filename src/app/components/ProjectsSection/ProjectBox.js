@@ -11,7 +11,7 @@ export const ProjectBox = ({name,text,technologies,image}) => {
         <div>
           <Subheading text={name}/>
           <Paragraph text={text}/>
-          <div className='flex gap-2 mt-2 '>
+          <div className='flex gap-2 mt-2 flex-wrap'>
            {technologies.map((tech,index)=>(
             <span className='px-2 py-1 bg-slate-400 rounded-lg'>{tech}</span>
            ))}

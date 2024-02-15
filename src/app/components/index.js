@@ -6,3 +6,4 @@ export * from "./ProjectsSection";
 export * from "./common";
 export * from "./Home";
 export * from "./BurgerMenu";
+export * from "./Footer";

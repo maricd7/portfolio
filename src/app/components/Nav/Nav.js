@@ -49,7 +49,7 @@ export const Nav = () => {
     checkSystemTheme();
   },[])
   return (
-    <nav className='flex justify-between  md:mx-auto  max-w-3xl items-center h-16  px-4 fixed top-0 left-0 w-full bg-white dark:bg-neutral-900 md:relative md:dark:bg-transparent'>
+    <nav className='flex justify-between  md:mx-auto  max-w-3xl items-center h-16   fixed top-0 left-0 w-full bg-white dark:bg-neutral-900 md:relative md:dark:bg-transparent'>
       <Logo />
           <Icon onClick={()=>toggleTheme()} icon={themeIcon} className="hidden md:block cursor-pointer h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90" style={{ color: iconColor }}/>
       <ul className='md:flex gap-4 hidden'>

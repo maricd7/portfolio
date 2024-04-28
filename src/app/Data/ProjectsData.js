@@ -13,5 +13,12 @@ export const ProjectsData = [
         technologies:['Next.js', 'TailwindCSS', 'Supabase', 'Typescript','Chart JS',],
         image: '/cms-cover.png',
         github:'https://github.com/maricd7/SwiftSailCMS',
+    },
+    {
+        name:'Coin Control (work in progress)', 
+        paragraphTxt:'CoinControl is a budget management app built with MERN stack.',
+        technologies:['Node.js', 'Express.js', 'MongoDB', 'React','TailwindCSS',],
+        image: '/cms-cover.png',
+        github:'https://github.com/maricd7/coin-control',
     }
 ] 

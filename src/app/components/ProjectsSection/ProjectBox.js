@@ -16,14 +16,8 @@ export const ProjectBox = ({ name, text, technologies, image,github,live }) => {
     }
   }, []);
   return (
-    <div className="rounded-lg mt-8 flex md:flex-row flex-col gap-4 border-2 border-gray-200 p-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-      <Image
-        className="rounded-lg"
-        src={image}
-        width={360}
-        height={180}
-        alt="SwiftSail Project Cover"
-      />
+    <div className="rounded-lg mt-8 flex md:flex-row flex-col items-center gap-4 border-2 border-zinc-800 p-4 ">
+      
       <div>
         <Subheading text={name} />
         <Paragraph text={text} />
@@ -51,6 +45,13 @@ export const ProjectBox = ({ name, text, technologies, image,github,live }) => {
           </Link>
         </div>
       </div>
+      <Image
+        className="rounded-lg h-fit"
+        src={image}
+        width={426}
+        height={240}
+        alt="SwiftSail Project Cover"
+      />   
     </div>
   );
 };

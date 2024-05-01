@@ -4,7 +4,7 @@ import { Projects } from '../ProjectsSection'
 
 export const Main = () => {
   return (
-    <div>
+    <div className='flex flex-col items-center'>
         <Summary/>
         <Projects/>
     </div>

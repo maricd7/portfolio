@@ -6,7 +6,7 @@ import {ProjectsData} from '../../Data/ProjectsData';
 
 export const Projects = () => {
   return (
-    <div className='mx-4 md:mx-0'>
+    <div className='mx-4 md:mx-0 max-w-3xl'>
         <Subheading text='My Side Projects'/>
         <Paragraph text='I really enjoy building side projects on my spare time. Experimenting with various technologies.'/>
         {ProjectsData.map((project,index)=>(

@@ -57,7 +57,7 @@ export const Nav = () => {
         <li><Link href='https://www.github.com/maricd7'><Icon icon="carbon:logo-github" width="32" height="32"  style={{color:'#fff'}}/></Link></li>
         <li><Link href='https://medium.com/@dejanmaric259'><Icon icon="carbon:logo-medium" width="32" height="32"  style={{color:'#fff'}}/></Link></li>
       </ul>
-      <Icon onClick={()=>{toggleBurger()}} className='md:hidden' icon="carbon:menu" width="24" height="24"   />
+      <Icon onClick={()=>{toggleBurger()}} className='md:hidden' icon="carbon:menu" width="24" height="24" style={{color:'#fff'}}  />
       {burger ? <BurgerMenu   toggleBurger={toggleBurger} /> : console.log('desktop')} 
     </nav>
   )

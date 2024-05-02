@@ -49,16 +49,16 @@ export const Nav = () => {
   //   checkSystemTheme();
   // },[])
   return (
-    <nav className='flex justify-between  md:mx-auto  max-w-3xl items-center h-16 p-4 md:p-0 fixed top-0 left-0 w-full bg-white dark:bg-zinc-950 md:relative md:dark:bg-zinc-950'>
+    <nav className='flex justify-between  md:mx-auto  max-w-3xl items-center h-16 p-4 md:p-0 fixed top-0 left-0 w-full bg-white md:relative bg-zinc-950'>
       <Logo />
           {/* <Icon onClick={()=>toggleTheme()} icon={themeIcon} className="hidden md:block cursor-pointer h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90" /> */}
       <ul className='md:flex gap-4 hidden'>
-        <li><Link href='https://www.linkedin.com/in/dejan-mari%C4%87-52a7a51b6/'><Icon icon="carbon:logo-linkedin" width="32" height="32" /></Link></li>
-        <li><Link href='https://www.github.com/maricd7'><Icon icon="carbon:logo-github" width="32" height="32"  /></Link></li>
-        <li><Link href='https://medium.com/@dejanmaric259'><Icon icon="carbon:logo-medium" width="32" height="32"  /></Link></li>
+        <li><Link href='https://www.linkedin.com/in/dejan-mari%C4%87-52a7a51b6/'><Icon icon="carbon:logo-linkedin" width="32" height="32" style={{color:'#fff'}}/></Link></li>
+        <li><Link href='https://www.github.com/maricd7'><Icon icon="carbon:logo-github" width="32" height="32"  style={{color:'#fff'}}/></Link></li>
+        <li><Link href='https://medium.com/@dejanmaric259'><Icon icon="carbon:logo-medium" width="32" height="32"  style={{color:'#fff'}}/></Link></li>
       </ul>
       <Icon onClick={()=>{toggleBurger()}} className='md:hidden' icon="carbon:menu" width="24" height="24"   />
       {burger ? <BurgerMenu   toggleBurger={toggleBurger} /> : console.log('desktop')} 
     </nav>
   )
-}
+} 

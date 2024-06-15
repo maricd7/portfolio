@@ -13,7 +13,7 @@ export const Nav = () => {
   }
 
   return (
-    <nav className="flex justify-between  mx-56   items-center h-16 p-4 md:p-0 fixed top-0 left-0  md:relative">
+    <nav className="flex justify-between  mx-56   items-center h-16 p-4 mt-4 md:p-0 fixed top-0 left-0  md:relative">
       <Logo />
       <ul className="md:flex gap-4 hidden">
         <li>

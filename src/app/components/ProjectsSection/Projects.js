@@ -1,17 +1,23 @@
-import React from 'react'
-import { Paragraph, Subheading } from '../common'
-import { ProjectBox } from './ProjectBox'
-import {ProjectsData} from '../../Data/ProjectsData';
+import React from "react";
+import { Paragraph } from "../common";
+import { ProjectsData } from "../../Data/ProjectsData";
 
+import ProjectBoxUpdated from "./ProjectBoxUpdated";
 
 export const Projects = () => {
   return (
-    <div className='mx-4 md:mx-0 max-w-3xl'>
-        <Subheading text='My Side Projects'/>
-        <Paragraph text='I really enjoy building side projects on my spare time. Experimenting with various technologies.'/>
-        {ProjectsData.map((project,index)=>(
-        <ProjectBox key={index} name={project.name}  text={project.paragraphTxt} technologies={project.technologies} image={project.image} github={project.github} live={project.live}/>
+    <section id="projects" className="mx-56 flex gap-16 flex-col relative">
+      <div className="flex flex-col gap-8">
+        <h2 className="text-4xl font-bold text-center">Projects</h2>
+        <Paragraph text="I really enjoy building side projects on my spare time. Experimenting with various technologies." />
+      </div>
+      <div className="flex flex-col gap-40 z-40">
+        {ProjectsData.map((project, index) => (
+          <ProjectBoxUpdated project={project} key={index} />
         ))}
-    </div>
-  )
-}
+      </div>
+      <div className="absolute bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 rounded-full w-96 h-96 bottom-16 right-16 blur-3xl opacity-30"></div>
+      <div className="absolute bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 rounded-full w-96 h-96 top-16 left-16 blur-3xl opacity-10"></div>
+    </section>
+  );
+};

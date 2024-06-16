@@ -11,7 +11,7 @@ export const Projects = () => {
       className="lg:mx-56 md:px-40 px-16 flex gap-16 flex-col relative"
     >
       <div className="flex flex-col gap-8">
-        <h2 className="text-4xl font-bold text-center">Projects</h2>
+        <h2 className="text-white text-4xl font-bold text-center">Projects</h2>
         <Paragraph text="I really enjoy building side projects on my spare time. Experimenting with various technologies." />
       </div>
       <div className="flex flex-col lg:gap-40 gap-20 z-40">

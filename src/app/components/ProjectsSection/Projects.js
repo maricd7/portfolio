@@ -19,8 +19,8 @@ export const Projects = () => {
           <ProjectBoxUpdated project={project} key={index} />
         ))}
       </div>
-      <div className="absolute bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 rounded-full w-96 h-96 bottom-16 right-16 blur-3xl opacity-30"></div>
-      <div className="absolute bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 rounded-full w-96 h-96 top-16 left-16 blur-3xl opacity-10"></div>
+      <div className="lg:absolute hidden bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 rounded-full w-96 h-96 bottom-16 right-16 blur-3xl opacity-30"></div>
+      <div className="lg:absolute hidden bg-gradient-to-r from-violet-600 via-violet-600 to-indigo-600 rounded-full w-96 h-96 top-16 left-16 blur-3xl opacity-10"></div>
     </section>
   );
 };

@@ -10,7 +10,7 @@ export const BurgerMenu = ({
   themeIcon,
 }) => {
   return (
-    <div className="md:hidden fixed z-50 h-full w-full top-0 right-0 bg-white dark:bg-black flex flex-col justify-center items-center overflow-hidden">
+    <div className="md:hidden fixed z-50 h-full w-full top-0 right-0 bg-white bg-gray-950 flex flex-col justify-center items-center overflow-hidden">
       <div className="absolute top-4 right-4  w-full flex justify-end p-4">
         {" "}
         <Icon

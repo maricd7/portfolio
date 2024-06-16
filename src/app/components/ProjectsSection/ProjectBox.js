@@ -45,9 +45,9 @@ export const ProjectBox = ({
           ))}
         </div>
         <div className="flex gap-4 mt-8">
-          {isSwiftSail && (
+          {live && (
             <Link
-              className="bg-black text-white hover:bg-white hover:text-black py-2 px-4 rounded dark:bg-white dark:text-slate-950 dark:hover:bg-slate-950 dark:hover:text-white"
+              className="bg-black text-white hover:bg-white hover:text-black py-2 px-6 rounded dark:bg-white dark:text-slate-950 dark:hover:bg-slate-950 dark:hover:text-white"
               href={live}
             >
               Live Demo

@@ -1,11 +1,20 @@
 export const ProjectsData = [
   {
     name: "Swift Sail Ecommerce App",
-    paragraphTxt: "SwiftSail is simple ecommerce app built using Next.js 14. ",
+    paragraphTxt: "SwiftSail is simple ecommerce app built using Next.js",
     technologies: ["Next.js", "TailwindCSS", "Supabase"],
     image: "/swift-cover2.png",
     github: "https://github.com/maricd7/SwiftSail",
     live: "https://swift-sail.vercel.app/",
+  },
+
+  {
+    name: "HouseHunt",
+    paragraphTxt: "HouseHunt is a platform to connect buyers and sellers.",
+    technologies: ["Next.js", "TailwindCSS", "Supabase", "JWT"],
+    image: "/househunt-cover.png",
+    github: "https://github.com/maricd7/HouseHunt",
+    live: "https://house-hunt-zeta.vercel.app/",
   },
   {
     name: "Coin Control ",

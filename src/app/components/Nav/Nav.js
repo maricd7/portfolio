@@ -13,7 +13,7 @@ export const Nav = () => {
   }
 
   return (
-    <nav className="flex justify-between  mx-56   items-center h-16 p-4 mt-4 md:p-0 fixed top-0 left-0  md:relative">
+    <nav className="flex justify-between lg:mx-56 md:mx-40 sm:mx-16 items-center h-16 p-4 mt-4 md:p-0  top-0 left-0">
       <Logo />
       <ul className="md:flex gap-4 hidden">
         <li>
@@ -51,7 +51,7 @@ export const Nav = () => {
         onClick={() => {
           toggleBurger();
         }}
-        className="md:hidden"
+        className="md:hidden cursor-pointer"
         icon="carbon:menu"
         width="24"
         height="24"

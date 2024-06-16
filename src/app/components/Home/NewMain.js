@@ -13,7 +13,7 @@ const NewMain = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          class="bg-gradient-to-r from-purple-500 via-purple-700 to-purple-900 bg-clip-text leading-loose		 text-6xl font-bold text-transparent text-center"
+          className="bg-gradient-to-r from-purple-500 via-purple-700 to-purple-900 bg-clip-text leading-loose lg:text-6xl text-2xl font-bold text-transparent text-center"
         >
           Crafting the symphony of User Interfaces.
         </motion.h1>
@@ -39,18 +39,18 @@ const NewMain = () => {
         >
           Projects
         </Link>
-        <Link
+        {/* <Link
           className="w-fit mt-16 bg-gray-950 text-white border-2 border-purple-950 px-12 py-2 text-lg rounded-full hover:shadow-lg hover:bg-gradient-to-r from-purple-500 via-purple-700 to-purple-900  hover:text-white"
           href=""
         >
           About Me
-        </Link>
+        </Link> */}
       </motion.div>
-      <div className="flex flex-col gap-4 mt-32">
+      <div className="flex flex-col gap-4 mt-32 overflow-hidden">
         <h2 className="text-center text-xl  text-gray-400 italic ">
           My tech stack
         </h2>
-        <div className="flex gap-16 items-center ">
+        <div className="flex lg:gap-16 md:gap-8 gap-4 items-center flex-wrap px-8 justify-center">
           <Image
             src="/tech-icons/nextjs.svg"
             alt="Next Js"

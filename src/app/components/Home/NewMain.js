@@ -35,7 +35,7 @@ const NewMain = () => {
       >
         <Link
           className="w-fit mt-16 bg-gradient-to-r hover:bg-gradient-to-l from-purple-500 via-purple-700 to-purple-900 px-12 py-2 text-lg rounded-full shadow-[0_5px_16px_rgba(75,_0,_130,_0.7)] hover:shadow-[0_9px_32px_rgba(75,_0,_130,_0.7)] "
-          href=""
+          href="#projects"
         >
           Projects
         </Link>
